@@ -1,0 +1,10 @@
+version: '3.3'
+services:
+  portfolio2023:
+    ports:
+      - '3001:3000'
+    volumes:
+      - '/Users/stijnhooft/app/portfolio/markdown:/app/markdown'
+      - '/Users/stijnhooft/app/portfolio/resources:/app/build/client/resources'
+    container_name: portfolio
+    image: stainii/portfolio2023
