@@ -71,6 +71,7 @@ h1 ~ p, h2 ~ p, h3 ~ p {
 
 p {
     line-height: 2rem;
+    word-break: break-word;
 }
 
 a:not(:has(img)) {
@@ -171,6 +172,11 @@ table td, table th {
 }
 table tr:nth-child(even) {
     background: var(--white2);
+}
+
+code {
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 @media print {
